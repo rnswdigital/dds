@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NSW Digital Design System - Side navigation</title>
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+  <script>
+    // SVG Sprite Loader
+    var svgAjax = new XMLHttpRequest();
+    svgAjax.open("GET", "../../assets/svg/sprite.svg", true);
+    svgAjax.send();
+    svgAjax.onload = function(e) {
+      var fragment = document.createRange().createContextualFragment(svgAjax.responseText);
+      var svg = fragment.querySelector('svg')
+      svg.setAttribute('aria-hidden', true);
+      svg.style.cssText = 'position: absolute; width: 0; height: 0; overflow: hidden;'
+      document.body.insertBefore(fragment, document.body.childNodes[0]);
+    };
+    // Replace 'no-js' with 'js' on the html tag
+    (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
+  </script>
+</head>
+
+<body >
+  
+<div style="max-width: 300px; float: left; padding: 2rem;">
+  <h1>Level 2 no child pages</h1>
+  <nav class="nsw-sidenav" aria-labelledby="sksm726ns side navigation">
+    <div class="nsw-sidenav__header">
+      <h2 id="sksm726ns" class="nsw-sidenav__heading">
+        <a href="#" class="nsw-sidenav__heading-link">About DPC</a></h2>
+    </div>
+    <ul class="nsw-sidenav__list nsw-sidenav__list--level-1">
+        <li class="nsw-sidenav__list-item ">
+          <a href="#" class="nsw-sidenav__link " >
+            Level 2
+          </a>
+        </li>
+        <li class="nsw-sidenav__list-item ">
+          <a href="#" class="nsw-sidenav__link " >
+            Level 2
+          </a>
+        </li>
+        <li class="nsw-sidenav__list-item has-active-children">
+          <a href="#" class="nsw-sidenav__link is-current" aria-current="page">
+            Level 2
+          </a>
+        </li>
+        <li class="nsw-sidenav__list-item ">
+          <a href="#" class="nsw-sidenav__link " >
+            Level 2
+          </a>
+        </li>
+        <li class="nsw-sidenav__list-item ">
+          <a href="#" class="nsw-sidenav__link " >
+            Level 2
+          </a>
+        </li>
+        <li class="nsw-sidenav__list-item ">
+          <a href="#" class="nsw-sidenav__link " >
+            Level 2
+          </a>
+        </li>
+        <li class="nsw-sidenav__list-item ">
+          <a href="#" class="nsw-sidenav__link " >
+            Level 2
+          </a>
+        </li>
+        <li class="nsw-sidenav__list-item ">
+          <a href="#" class="nsw-sidenav__link " >
+            Level 2
+          </a>
+        </li>
+        <li class="nsw-sidenav__list-item ">
+          <a href="#" class="nsw-sidenav__link " >
+            Level 2
+          </a>
+        </li>
+    </ul>
+  </nav>
+</div>
+
+<div style="max-width: 300px; float: left; padding: 2rem;">
+  <h1>Level 2 with child pages</h1>
+  <nav class="nsw-sidenav" aria-labelledby="sksm7kis26ns side navigation">
+    <div class="nsw-sidenav__header">
+      <h2 id="sksm7kis26ns" class="nsw-sidenav__heading">
+        <a href="#" class="nsw-sidenav__heading-link">About DPC</a></h2>
+    </div>
+    <ul class="nsw-sidenav__list nsw-sidenav__list--level-1">
+        <li class="nsw-sidenav__list-item ">
+          <a href="#" class="nsw-sidenav__link " >
+            Level 2
+          </a>
+        </li>
+        <li class="nsw-sidenav__list-item ">
+          <a href="#" class="nsw-sidenav__link " >
+            Level 2
+          </a>
+        </li>
+        <li class="nsw-sidenav__list-item has-active-children">
+          <a href="#" class="nsw-sidenav__link is-current" aria-current="page">
+            Level 2
+          </a>
+          <ul class="nsw-sidenav__list nsw-sidenav__list--level-2">
+              <li class="nsw-sidenav__list-item ">
+                <a href="#" class="nsw-sidenav__link " >
+                  Level 3
+                </a>
+              </li>
+              <li class="nsw-sidenav__list-item ">
+                <a href="#" class="nsw-sidenav__link " >
+                  Level 3
+                </a>
+              </li>
+              <li class="nsw-sidenav__list-item ">
+                <a href="#" class="nsw-sidenav__link " >
+                  Level 3
+                </a>
+              </li>
+          </ul>
+        </li>
+        <li class="nsw-sidenav__list-item ">
+          <a href="#" class="nsw-sidenav__link " >
+            Level 2
+          </a>
+        </li>
+        <li class="nsw-sidenav__list-item ">
+          <a href="#" class="nsw-sidenav__link " >
+            Level 2
+          </a>
+        </li>
+    </ul>
+  </nav>
+</div>
+
+<div style="max-width: 300px; float: left; padding: 2rem;">
+  <h1>Level 4 with child pages</h1>
+  <nav class="nsw-sidenav" aria-labelledby="sksm7sss26ns side navigation">
+    <div class="nsw-sidenav__header">
+      <h2 id="sksm7sss26ns" class="nsw-sidenav__heading">
+        <a href="#" class="nsw-sidenav__heading-link">About DPC</a></h2>
+    </div>
+    <ul class="nsw-sidenav__list nsw-sidenav__list--level-1">
+        <li class="nsw-sidenav__list-item ">
+          <a href="#" class="nsw-sidenav__link " >
+            Level 2
+          </a>
+        </li>
+        <li class="nsw-sidenav__list-item ">
+          <a href="#" class="nsw-sidenav__link " >
+            Level 2
+          </a>
+        </li>
+        <li class="nsw-sidenav__list-item has-active-children">
+          <a href="#" class="nsw-sidenav__link " >
+            Level 2
+          </a>
+          <ul class="nsw-sidenav__list nsw-sidenav__list--level-2">
+              <li class="nsw-sidenav__list-item ">
+                <a href="#" class="nsw-sidenav__link " >
+                  Level 3
+                </a>
+              </li>
+              <li class="nsw-sidenav__list-item has-active-children">
+                <a href="#" class="nsw-sidenav__link " >
+                  Level 3
+                </a>
+                <ul class="nsw-sidenav__list nsw-sidenav__list--level-3">
+                    <li class="nsw-sidenav__list-item ">
+                      <a href="#" class="nsw-sidenav__link " >
+                        Level 4
+                      </a>
+                    </li>
+                    <li class="nsw-sidenav__list-item ">
+                      <a href="#" class="nsw-sidenav__link " >
+                        Level 4
+                      </a>
+                    </li>
+                    <li class="nsw-sidenav__list-item has-active-children">
+                      <a href="#" class="nsw-sidenav__link is-current" aria-current="page">
+                        Level 4
+                      </a>
+                      <ul class="nsw-sidenav__list nsw-sidenav__list--level-4">
+                          <li class="nsw-sidenav__list-item ">
+                            <a href="#" class="nsw-sidenav__link " >
+                              Level 5
+                            </a>
+                          </li>
+                          <li class="nsw-sidenav__list-item ">
+                            <a href="#" class="nsw-sidenav__link " >
+                              Level 5
+                            </a>
+                          </li>
+                          <li class="nsw-sidenav__list-item ">
+                            <a href="#" class="nsw-sidenav__link " >
+                              Level 5
+                            </a>
+                          </li>
+                      </ul>
+                    </li>
+                </ul>
+              </li>
+              <li class="nsw-sidenav__list-item ">
+                <a href="#" class="nsw-sidenav__link " >
+                  Level 3
+                </a>
+              </li>
+          </ul>
+        </li>
+        <li class="nsw-sidenav__list-item ">
+          <a href="#" class="nsw-sidenav__link " >
+            Level 2
+          </a>
+        </li>
+        <li class="nsw-sidenav__list-item ">
+          <a href="#" class="nsw-sidenav__link " >
+            Level 2
+          </a>
+        </li>
+    </ul>
+  </nav>
+</div>
+
+  <script src="../../js/main.js"></script>
+  <script>window.NSW.initSite()</script>
+</body>
+</html>

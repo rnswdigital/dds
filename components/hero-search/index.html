@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NSW Digital Design System - Hero Search</title>
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+  <script>
+    // SVG Sprite Loader
+    var svgAjax = new XMLHttpRequest();
+    svgAjax.open("GET", "../../assets/svg/sprite.svg", true);
+    svgAjax.send();
+    svgAjax.onload = function(e) {
+      var fragment = document.createRange().createContextualFragment(svgAjax.responseText);
+      var svg = fragment.querySelector('svg')
+      svg.setAttribute('aria-hidden', true);
+      svg.style.cssText = 'position: absolute; width: 0; height: 0; overflow: hidden;'
+      document.body.insertBefore(fragment, document.body.childNodes[0]);
+    };
+    // Replace 'no-js' with 'js' on the html tag
+    (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
+  </script>
+</head>
+
+<body >
+  <div class="hero-search">
+  <div class="nsw-container">
+    <div class="hero-search__content nsw-body-content">
+      <h1 class="hero-search__title">NSW Government</h1>
+      <p>Find information, access services and have your say.</p>
+      <form role="search" class="hero-search__form">
+        <div class="nsw-form-search">
+          <label for="hero-search-input" class="sr-only">Search site for:</label>
+          <input autocomplete="off" class="nsw-form-search__input" id="hero-search-input" name="hero-search" type="text">
+          <button class="nsw-form-search__submit" type="submit">
+            <svg class="nsw-icon" focusable="false" aria-hidden="true">
+              <use xlink:href="#search"></use>
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+        </div>
+      </form>
+      <div class="hero-search__suggested">
+        <ul>
+            <li><a href="#">COVID-19 (coronavirus</a></li>
+            <li><a href="#">Water restrictions</a></li>
+            <li><a href="#">Support for bushfire affected communities</a></li>
+            <li><a href="#">Renew rego</a></li>
+            <li><a href="#">Green slips</a></li>
+            <li><a href="#">Driving, boating and transport</a></li>
+            <li><a href="#">School and public holidays</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="../../js/main.js"></script>
+  <script>window.NSW.initSite()</script>
+</body>
+</html>
