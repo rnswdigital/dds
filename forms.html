@@ -30,7 +30,74 @@
 </head>
 
 <body >
-  <div class="nsw-container nsw-wysiwyg-content">
+  <!--<div class="nsw-container nsw-wysiwyg-content"> -->
+    
+<body class="nsw-ds-example">
+  <nav class="nsw-skipto nsw-container" aria-label="Skip to links">
+  <a class="nsw-skipto__link" href="#nav"><span>Skip to navigation</span></a>
+  <a class="nsw-skipto__link" href="#content"><span>Skip to content</span></a>
+</nav>
+<!--
+<div class="nsw-masthead">
+  <div class="nsw-container">
+    <p>A NSW Government website</p>
+  </div>
+</div>
+-->
+<header class="nsw-header">
+  <div class="nsw-header__container">
+    <div class="nsw-header__wrapper">
+
+      <div class="nsw-header__center">
+        <a href="#" class="nsw-header__logo-link">
+        <!--  <svg class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
+            <use xlink:href="#dpc-logo"></use>
+          </svg> -->
+        <img src="/dds/assets/svg/logo_revenue.svg" alt="revenue logo" class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
+                <use xlink:href="#rnsw-logo"></use>
+          <span class="sr-only">Revenue NSW</span>
+        </a>
+      </div>
+
+      <div class="nsw-header__left">
+        <button type="button" class="nsw-header-btn nsw-header-btn--menu js-open-navigation" aria-expanded="false"
+          aria-controls="main-navigation">
+          <svg class="nsw-icon nsw-header-btn__icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#menu"></use>
+          </svg>
+          <span class="nsw-header-btn__sub"><span class="sr-only">Open</span> Menu</span>
+        </button>
+      </div>
+      <div class="nsw-header__right">
+        <button type="button" class="nsw-header-btn nsw-header-btn--search js-open-search" aria-expanded="false"
+          aria-controls="header-search">
+          <svg class="nsw-icon nsw-header-btn__icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#search"></use>
+          </svg>
+          <span class="nsw-header-btn__sub"><span class="sr-only">Show</span> Search</span>
+        </button>
+      </div>
+    </div>
+    <div class="nsw-search">
+      <div id="header-search" class="nsw-search__area js-search-area" hidden>
+        <form role="search">
+          <label for="nsw-search__input" class="sr-only">Search site for:</label>
+          <input autocomplete="off" class="nsw-search__input js-search-input" id="nsw-search__input"
+            name="input-autocomplete" type="text">
+          <svg class="nsw-icon nsw-search__search-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#search"></use>
+          </svg>
+        </form>
+        <button class="nsw-search__close-btn js-close-search" aria-expanded="true" aria-controls="header-search">
+          <svg class="nsw-icon nsw-search__close-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#close"></use>
+          </svg>
+          <span class="sr-only">Close search</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
   <h1>Forms</h1>
   <h2>Default Fields</h2>
   <div class="nsw-forms">
@@ -216,6 +283,29 @@
     </div>
   </div>
 </div>
+<div class="nsw-footer__lower">
+    <div class="nsw-container">
+      <p>We pay respect to the Traditional Custodians and First Peoples of NSW, and acknowledge their continued connection to their country and culture.</p>
+      <hr>
+      <ul class="nsw-footer-links">
+                <li class="nsw-footer-links__item">
+                  <a href="https://www.revenue.nsw.gov.au/terms" class="nsw-footer-links__link">Terms</a>
+                </li>
+                <li class="nsw-footer-links__item">
+                  <a href="https://www.revenue.nsw.gov.au/privacy" class="nsw-footer-links__link">Privacy</a>
+                </li>
+                <li class="nsw-footer-links__item">
+                  <a href="https://www.revenue.nsw.gov.au/accessibility" class="nsw-footer-links__link">Accessibility</a>
+                </li>
+              </ul>
+
+      <div class="nsw-footer__info">
+        <p class="nsw-footer__copyright">Copyright © 2020</p>
+      <!--  <p class="nsw-footer__built">Built by <a href="https://www.digital.nsw.gov.au/digital-design-system" target="_blank" rel="noopener noreferrer">NSW Design System</a></p> -->
+      </div>
+    </div>
+  </div>
+</footer>
 
   <script src="../../js/main.js"></script>
   <script>window.NSW.initSite()</script>
