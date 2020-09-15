@@ -1,0 +1,8 @@
+/* .nsw-header__logo{width:8.8125rem;height:2.875rem}
+@media (min-width:48em){.nsw-header__logo{width:10.5rem;height:3.4375rem}} */
+
+.nsw-header__logo{width:9.9862rem!important;height:3.5rem!important; }
+
+@media (min-width:48em){.nsw-header__logo{width:13.5525rem!important;height:4.75rem!important}}
+
+
