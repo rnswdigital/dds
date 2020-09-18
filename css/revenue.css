@@ -1,8 +1,21 @@
-/* .nsw-header__logo{width:8.8125rem;height:2.875rem}
-@media (min-width:48em){.nsw-header__logo{width:10.5rem;height:3.4375rem}} */
+/* 
 
-.nsw-header__logo{width:9.9862rem!important;height:3.5rem!important; }
+Developer's note: Tis is only an example of CSS to make Revenue NSW logo to comply and meet with our corporate branding requirements, 
+you can apply the margin/padding as guidelines for your system and file structure. 
+
+
+Original 
+.nsw-header__logo{width:8.8125rem;height:2.875rem}
+@media (min-width:48em){.nsw-header__logo{width:10.5rem;height:3.4375rem}}
+
+For any questions, please contact Solution Design team at Revenue Digital. 
+
+
+*/
+
+
+
+
+.nsw-header__logo{ width:9.9862rem!important;height:3.5rem!important; }
 
 @media (min-width:48em){.nsw-header__logo{width:13.5525rem!important;height:4.75rem!important}}
-
-
