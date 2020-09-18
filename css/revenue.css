@@ -13,9 +13,14 @@ For any questions, please contact Solution Design team at Revenue Digital.
 
 */
 
+.nsw-header__logo {
+	width: 9.9862rem!important;
+	height: 3.5rem!important;
+}
 
-
-
-.nsw-header__logo{ width:9.9862rem!important;height:3.5rem!important; }
-
-@media (min-width:48em){.nsw-header__logo{width:13.5525rem!important;height:4.75rem!important}}
+@media (min-width:48em) {
+	.nsw-header__logo {
+		width: 13.5525rem!important;
+		height: 4.75rem!important
+	}
+}
