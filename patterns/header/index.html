@@ -10,13 +10,13 @@
   <meta name="keywords" content="">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/revenue.css">
+  <link rel="stylesheet" href="/dds/css/main.css">
+    <link rel="stylesheet" href="/dds/css/revenue.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
   <script>
     // SVG Sprite Loader
     var svgAjax = new XMLHttpRequest();
-    svgAjax.open("GET", "../assets/svg/sprite.svg", true);
+    svgAjax.open("GET", "/dds/assets/svg/sprite.svg", true);
     svgAjax.send();
     svgAjax.onload = function(e) {
       var fragment = document.createRange().createContextualFragment(svgAjax.responseText);
@@ -51,7 +51,7 @@
         <!--  <svg class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
             <use xlink:href="#dpc-logo"></use>
           </svg> -->
-        <img src="/assets/svg/logo_revenue.svg" alt="revenue logo" class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
+        <img src="/dds/assets/svg/logo_revenue.svg" alt="revenue logo" class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
                 <use xlink:href="#rnsw-logo"></use>
           <span class="sr-only">Revenue NSW</span>
         </a>
@@ -97,7 +97,7 @@
   </div>
 </header>
 
-  <script src="../js/main.js"></script>
+  <script src="/dds/js/main.js"></script>
   <script>window.NSW.initSite()</script>
 </body>
 </html>
