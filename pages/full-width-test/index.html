@@ -1,21 +1,22 @@
+
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NSW Digital Design System - Forms</title>
+  <title>Revenue NSW Digital Design System - Full width</title>
   <meta name="robots" content="noindex" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/revenue.css">
+  <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="/dds/../../css/revenue.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
   <script>
     // SVG Sprite Loader
     var svgAjax = new XMLHttpRequest();
-    svgAjax.open("GET", "assets/svg/sprite.svg", true);
+    svgAjax.open("GET", "../../assets/svg/sprite.svg", true);
     svgAjax.send();
     svgAjax.onload = function(e) {
       var fragment = document.createRange().createContextualFragment(svgAjax.responseText);
@@ -28,9 +29,6 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
 </head>
-
-<body >
-  <!--<div class="nsw-container nsw-wysiwyg-content"> -->
 
 <body class="nsw-ds-example">
   <nav class="nsw-skipto nsw-container" aria-label="Skip to links">
@@ -53,11 +51,12 @@
         <!--  <svg class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
             <use xlink:href="#dpc-logo"></use>
           </svg> -->
-        <img src="assets/svg/logo_revenue.svg" alt="revenue logo" class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
+        <img src="/dds/assets/svg/logo_revenue.svg" alt="revenue logo" class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
                 <use xlink:href="#rnsw-logo"></use>
           <span class="sr-only">Revenue NSW</span>
         </a>
       </div>
+
       <div class="nsw-header__left">
         <button type="button" class="nsw-header-btn nsw-header-btn--menu js-open-navigation" aria-expanded="false"
           aria-controls="main-navigation">
@@ -115,7 +114,7 @@
             <use xlink:href="#chevron"></use>
           </svg>
         </a>
-          <div class="nsw-subnavigation" id="subnav-914d7e2" role="region" aria-label="About DPC Submenu">
+          <div class="nsw-subnavigation" id="subnav-914d7e2" role="region" aria-label="About RBNSW Submenu">
             <div class="nsw-subnavigation__header">
               <button type="button" class="nsw-subnavigation__back-btn js-close-subnav" aria-controls="subnav-914d7e2" aria-expanded="true">
                 <svg class="nsw-icon nsw-icon--rotate-180" focusable="false" aria-hidden="true">
@@ -1666,27 +1665,26 @@
         </div>
     </div>
   </div>
-  <div class="nsw-footer__lower">
+  
+   <div class="nsw-footer__lower">
     <div class="nsw-container">
       <p>We pay respect to the Traditional Custodians and First Peoples of NSW, and acknowledge their continued connection to their country and culture.</p>
       <hr>
       <ul class="nsw-footer-links">
-          <li class="nsw-footer-links__item">
-            <a href="#" class="nsw-footer-links__link">Tertiary</a>
-          </li>
-          <li class="nsw-footer-links__item">
-            <a href="#" class="nsw-footer-links__link">Tertiary</a>
-          </li>
-          <li class="nsw-footer-links__item">
-            <a href="#" class="nsw-footer-links__link">Tertiary</a>
-          </li>
-          <li class="nsw-footer-links__item">
-            <a href="#" class="nsw-footer-links__link">Tertiary</a>
-          </li>
-      </ul>
+                <li class="nsw-footer-links__item">
+                  <a href="https://www.revenue.nsw.gov.au/terms" class="nsw-footer-links__link">Terms</a>
+                </li>
+                <li class="nsw-footer-links__item">
+                  <a href="https://www.revenue.nsw.gov.au/privacy" class="nsw-footer-links__link">Privacy</a>
+                </li>
+                <li class="nsw-footer-links__item">
+                  <a href="https://www.revenue.nsw.gov.au/accessibility" class="nsw-footer-links__link">Accessibility</a>
+                </li>
+              </ul>
+
       <div class="nsw-footer__info">
-        <p class="nsw-footer__copyright">Copyright © 2019</p>
-        <p class="nsw-footer__built">Built by <a href="https://www.digital.nsw.gov.au/digital-design-system" target="_blank" rel="noopener noreferrer">NSW Design System</a></p>
+        <p class="nsw-footer__copyright">Copyright © 2020</p>
+      <!--  <p class="nsw-footer__built">Built by <a href="https://www.digital.nsw.gov.au/digital-design-system" target="_blank" rel="noopener noreferrer">NSW Design System</a></p> -->
       </div>
     </div>
   </div>
