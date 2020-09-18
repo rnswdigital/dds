@@ -1,20 +1,22 @@
+
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NSW Digital Design System - Global Header</title>
+  <title>NSW Digital Design System - Full width</title>
   <meta name="robots" content="noindex" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" href="../../favicon.ico">
-  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/revenue.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
   <script>
     // SVG Sprite Loader
     var svgAjax = new XMLHttpRequest();
-    svgAjax.open("GET", "../../assets/svg/sprite.svg", true);
+    svgAjax.open("GET", "/assets/svg/sprite.svg", true);
     svgAjax.send();
     svgAjax.onload = function(e) {
       var fragment = document.createRange().createContextualFragment(svgAjax.responseText);
@@ -28,27 +30,33 @@
   </script>
 </head>
 
-<body >
+<body class="nsw-ds-example">
   <nav class="nsw-skipto nsw-container" aria-label="Skip to links">
   <a class="nsw-skipto__link" href="#nav"><span>Skip to navigation</span></a>
   <a class="nsw-skipto__link" href="#content"><span>Skip to content</span></a>
 </nav>
+<!--
 <div class="nsw-masthead">
   <div class="nsw-container">
     <p>A NSW Government website</p>
   </div>
 </div>
+-->
 <header class="nsw-header">
   <div class="nsw-header__container">
     <div class="nsw-header__wrapper">
+
       <div class="nsw-header__center">
         <a href="#" class="nsw-header__logo-link">
-          <svg class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
+        <!--  <svg class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
             <use xlink:href="#dpc-logo"></use>
-          </svg>
-          <span class="sr-only">NSW Department of Premier and Cabinet</span>
+          </svg> -->
+        <img src="/assets/svg/logo_revenue.svg" alt="revenue logo" class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
+                <use xlink:href="#rnsw-logo"></use>
+          <span class="sr-only">Revenue NSW</span>
         </a>
       </div>
+
       <div class="nsw-header__left">
         <button type="button" class="nsw-header-btn nsw-header-btn--menu js-open-navigation" aria-expanded="false"
           aria-controls="main-navigation">
@@ -89,7 +97,7 @@
   </div>
 </header>
 
-  <script src="../../js/main.js"></script>
+  <script src="/js/main.js"></script>
   <script>window.NSW.initSite()</script>
 </body>
 </html>
