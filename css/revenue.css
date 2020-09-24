@@ -36,7 +36,7 @@ Original from DDS
 }
 
 
-/* (2) Radio buttons - showed selected item in print (printing the background images) */
+/* (2) Radio buttons - Display selected item in print (printing the background images) */
 
 @media print {
 *{
