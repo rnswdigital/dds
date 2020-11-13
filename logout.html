@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NSW Digital Design System - Forms</title>
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/revenue.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+  <script>
+    // SVG Sprite Loader
+    var svgAjax = new XMLHttpRequest();
+    svgAjax.open("GET", "assets/svg/sprite.svg", true);
+    svgAjax.send();
+    svgAjax.onload = function(e) {
+      var fragment = document.createRange().createContextualFragment(svgAjax.responseText);
+      var svg = fragment.querySelector('svg')
+      svg.setAttribute('aria-hidden', true);
+      svg.style.cssText = 'position: absolute; width: 0; height: 0; overflow: hidden;'
+      document.body.insertBefore(fragment, document.body.childNodes[0]);
+    };
+    // Replace 'no-js' with 'js' on the html tag
+    (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
+  </script>
+</head>
+
+<body >
+
+
+<body class="nsw-ds-example">
+  <nav class="nsw-skipto nsw-container" aria-label="Skip to links">
+  <a class="nsw-skipto__link" href="#nav"><span>Skip to navigation</span></a>
+  <a class="nsw-skipto__link" href="#content"><span>Skip to content</span></a>
+</nav>
+
+<header class="nsw-header">
+  <div class="nsw-header__container">
+    <div class="nsw-header__wrapper">
+
+      <div class="nsw-header__center">
+        <a href="#" class="nsw-header__logo-link">
+
+        <img src="assets/svg/logo_revenue.svg" alt="revenue logo" class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
+                <use xlink:href="#rnsw-logo"></use>
+          <span class="sr-only">Revenue NSW</span>
+        </a>
+      </div>
+
+      <div class="nsw-header__left">
+        <button type="button" class="nsw-header-btn nsw-header-btn--menu js-open-navigation" aria-expanded="false"
+          aria-controls="main-navigation">
+          <svg class="nsw-icon nsw-header-btn__icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#menu"></use>
+          </svg>
+          <span class="nsw-header-btn__sub"><span class="sr-only">Open</span> Menu</span>
+        </button>
+      </div>
+  
+ 
+</header>
+
+<nav id="main-navigation" class="nsw-navigation " aria-label="Return home">
+  <div class="nsw-navigation__header">
+    <h2 id="nsw-navigation">Return home</h2>
+    <button type="button" class="nsw-navigation__close js-close-navigation" aria-expanded="true">
+      <svg class="nsw-icon icon" focusable="false" aria-hidden="true">
+        <use xlink:href="#close"></use>
+      </svg>
+      <span class="sr-only">Close Menu</span>
+    </button>
+  </div>
+  <ul class="nsw-navigation__list">
+      <li class="nsw-navigation__list-item pull-right">
+        <a href="template2.html" class="nsw-navigation__link">
+          <span class="nsw-navigation__link-text">Log out</span>
+        </a>
+      </li>
+     
+  </ul>
+
+</nav>
+
+  <div class="nsw-container">
+  <nav aria-label="Breadcrumb" class="nsw-breadcrumb">
+    <ol class="nsw-breadcrumb__list">
+        <li class="nsw-breadcrumb__item">
+          <a href="#" class="nsw-breadcrumb__link " >< MyServiceNSW Account</a>
+        </li>
+       
+    </ol>
+  </nav>
+</div>
+  <body>
+    
+    <p></p>
+<main>
+ <div class="nsw-container nsw-layout nsw-wysiwyg-content">
+  
+  <h1>Revenue NSW Branding Guides</h1>
+   
+   <h2>SNSW Kiama Library</h2>
+
+ 
+  <p><small>Coming soon</small></p>
+<p>testing </p>
+<p>testing </p>
+<p>testing </p>
+<p>testing </p>
+<p>testing </p>
+<p>testing </p>
+<p>testing </p>
+<p>testing </p>
+<p>testing </p>
+<p>testing </p>
+<p>testing </p>
+<p>testing </p>
+<p>testing </p><p>testing </p>
+
+  </div>
+</main>
+
+  <footer class="nsw-footer">
+  
+    <div class="nsw-footer__lower">
+      <div class="nsw-container">
+        <p>We pay respect to the Traditional Custodians and First Peoples of NSW, and acknowledge their continued connection to their country and culture.</p>
+        <hr>
+        <ul class="nsw-footer-links">
+                  <li class="nsw-footer-links__item">
+                    <a href="https://www.revenue.nsw.gov.au/terms" class="nsw-footer-links__link">Terms</a>
+                  </li>
+                  <li class="nsw-footer-links__item">
+                    <a href="https://www.revenue.nsw.gov.au/privacy" class="nsw-footer-links__link">Privacy</a>
+                  </li>
+                  <li class="nsw-footer-links__item">
+                    <a href="https://www.revenue.nsw.gov.au/accessibility" class="nsw-footer-links__link">Accessibility</a>
+                  </li>
+                </ul>
+
+        <div class="nsw-footer__info">
+          <p class="nsw-footer__copyright">Copyright © 2020</p>
+        <!--  <p class="nsw-footer__built">Built by <a href="https://www.digital.nsw.gov.au/digital-design-system" target="_blank" rel="noopener noreferrer">NSW Design System</a></p> -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <script src="js/main.js"></script>
+    <script>window.NSW.initSite()</script>
+  </body>
+  </html>
