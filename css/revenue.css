@@ -1,48 +1,23 @@
 /* 
 
-DEVELOPER'S NOTE (REFERENCE GUIDE ONLY) 
-============================================================================
-An example of Customised CSS for Revenue NSW, which including:
+
+An example CSS to make Revenue NSW logo to comply and meet with our corporate branding requirements, 
+you can apply this as margin/padding as guidelines for your system and file structure. 
 
 
-(1) Enlarge the Revenue NSW logo to meet with DCS Marketing and Branding requirements (approved)
-
-(2) How to show selected radio buttons in print copies 
-
-Please use as guidance when applying them to your system and structures. For any questions, contact Solution Design team at Revenue Digital. 
-
-*/
-
-
-/* (1) RNSW logo dimension changes 
-====================================
-
-Original from DDS 
+Original 
 .nsw-header__logo{width:8.8125rem;height:2.875rem}
-@media (min-width:48em){.nsw-header__logo{width:10.5rem;height:3.4375rem}}
+@media (min-width:48em){.nsw-header__logo{width:10.5rem;height:3.4375rem}} 
+
 
 */
 
-.nsw-header__logo {
-	width: 9.9862rem!important;
-	height: 3.5rem!important;
-}
 
-@media (min-width:48em) {
-	.nsw-header__logo {
-		width: 13.5525rem!important;
-		height: 4.75rem!important
-	}
-}
 
-element.style { margin-left: auto !important;}
+.nsw-header__logo{ width:9.9862rem;height:3.5rem; }
 
-/* (2) Radio buttons - Display selected item in print (printing the background images) */
+@media (min-width:48em){.nsw-header__logo{width:13.5525rem;height:4.75rem;}}
 
-@media print {
-*{
--webkit-print-color-adjust: exact !important;
-color-adjust: exact !important;
-}
-	
-	
+.nsw-navigation__list-item { margin-left: auto;}
+
+
